@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنصات السحابية ومشاركة الملفات - التقرير البحثي</title>
+</head>
+<body>
+
+    <!-- عنوان البحث وبيانات الطالب -->
+    <header>
+        <h1>المنصات السحابية ومشاركة الملفات: البنية التحتية، الأمان والتطبيقات الحديثة</h1>
+        <p><strong>اسم الطالبة:</strong> آية وجيه أبو علي محمد</p>
+        <p><strong>الرقم الجامعي:</strong> 2500199</p>
+        <p><strong>المادة الدراسية:</strong> الحوسبة السحابية وأنظمة الشبكات المتقدمة</p>
+    </header>
+
+    <hr>
+
+    <!-- قسم المقدمة -->
+    <section>
+        <h2>1. المقدمة والأهمية البحثية</h2>
+        <p>
+            شهد العالم الرقمي المعاصر تحولاً جذرياً غير مسبوق في أساليب التعامل مع البيانات والتطبيقات الرقمية، حيث برزت <strong>"الحوسبة السحابية" (Cloud Computing)</strong> كنموذج حاسوبي قائم على التزويد المرن للموارد عبر شبكة الإنترنت. ضمن هذا الإطار الشامل، تحتل <strong>"منصات مشاركة الملفات السحابية" (Cloud File Sharing Platforms)</strong> موقع الصدارة كعنصر حاسم لتمكين الأفراد والمؤسسات من تخزين البيانات، والوصول إليها، وتشاركها بمرونة عالية ودون الانقياد للقيود الجغرافية أو الأجهزة المادية المحلية.
+        </p>
+        <p>
+            تتمثل الأهمية البحثية لهذا التقرير في تقديم تحليل أكاديمي عميق لبنية وتصميم هذه المنصات، واستكشاف البرتوكولات والمفاهيم الهندسية التي تجعل من التخزين السحابي بديلاً كفواً وآمناً للحلول التخزينية المادية التقليدية مثل الأقراص الصلبة (HDDs) وخوادم الملفات المحلية (NAS/SAN).
+        </p>
+    </section>
+
+    <!-- قسم عرض الموضوع -->
+    <section>
+        <h2>2. عرض الموضوع (المحاور الأساسية للبنية والهندسة)</h2>
+        
+        <h3>أبرز نماذج تقديم الخدمات السحابية (NIST)</h3>
+        <p>
+            تعتمد منصات مشاركة الملفات على نماذج رئيسية تشمل: <strong>البرمجيات كخدمة (SaaS)</strong> مثل Google Drive و OneDrive، <strong>المنصة كخدمة (PaaS)</strong> لتوفير واجهات البرمجة (APIs)، و<strong>البنية التحتية كخدمة (IaaS)</strong> لتوفير الموارد التخزينية الأساسية.
+        </p>
+
+        <h3>هندسة أنظمة التخزين الكائني مقابل التكتلي والملفي</h3>
+        <p>
+            تتعدد الطرق الهندسية لتخزين البيانات وتنظيمها داخل الخوادم السحابية، وتنقسم إلى التخزين الكائني (Object Storage) الذي يعتمد على المعرف الفريد (GUID)، والتخزين التكتلي (Block Storage) الذي يعتمد على تقطيع الملفات لكتل ثابتة، والتخزين الملفي السحابي (Cloud File Storage).
+        </p>
+
+        <!-- إضافة الصورة التوضيحية مع الرابط المباشر -->
+        <div>
+            <p><strong>شكل توضيحي لمسار التشفير والتخزين الموزع:</strong></p>
+            <img src="https://generativelanguage.googleapis.com/v1beta/files/file-X4eE2Y83G751j652W5fG4s2f" alt="مخطط هندسي يوضح الحوسبة السحابية والتخزين الكائني" width="700">
+        </div>
+
+        <h3>جدول مقارنة بين المنصات السحابية التجارية والمفتوحة</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>المنصة السحابية</th>
+                    <th>معمارية التخزين</th>
+                    <th>معيار التشفير</th>
+                    <th>تقنيات المزامنة</th>
+                    <th>التحكم في الملكية والخصوصية</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Google Drive</strong></td>
+                    <td>Distributed Object Storage</td>
+                    <td>AES-256 / TLS 1.3</td>
+                    <td>Block-level Delta Sync</td>
+                    <td>مزود الخدمة يدير المفاتيح</td>
+                </tr>
+                <tr>
+                    <td><strong>Microsoft OneDrive</strong></td>
+                    <td>Azure Blob Storage</td>
+                    <td>BitLocker + AES-256</td>
+                    <td>Differential Sync</td>
+                    <td>تكامل مع Entra ID / Azure AD</td>
+                </tr>
+                <tr>
+                    <td><strong>Dropbox Business</strong></td>
+                    <td>Amazon S3 / Custom Nodes</td>
+                    <td>AES-256 at rest</td>
+                    <td>Streaming / Delta Sync</td>
+                    <td>مفاتيح مشفرة سحابياً</td>
+                </tr>
+                <tr>
+                    <td><strong>Nextcloud (Self-Hosted)</strong></td>
+                    <td>Local / S3 External</td>
+                    <td>E2EE Optional</td>
+                    <td>WebDAV / Chunking</td>
+                    <td>ملكية مطلقة للمستخدم (مستقل)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>أمن المعلومات والبروتوكولات التشفيرية</h3>
+        <p>
+            تعتمد المنصات على أطر أمنية متقدمة تشمل التشفير أثناء النقل عبر بروتوكول <strong>TLS 1.3</strong>، التشفير أثناء السكون باستخدام خوارزمية <strong>AES-256</strong>، بالإضافة إلى تقنيات التشفير من الطرف إلى الطرف (E2EE) وإدارة الهوية وأذونات الوصول (RBAC).
+        </p>
+    </section>
+
+    <!-- قسم المراجع -->
+    <section>
+        <h2>3. المراجع والمصادر الأكاديمية</h2>
+        <ul>
+            <li>
+                <a href="https://aws.amazon.com/ar/what-is/cloud-file-storage" target="_blank">مؤسسة أمازون وب سيرفيسز (AWS Cloud File Storage Guide) - ما المقصود بالتخزين السحابي للملفات؟</a>
+            </li>
+            <li>
+                <a href="https://www.ibm.com/ae-ar/think/topics/cloud-computing" target="_blank">شركة أي بي إم (IBM Cloud Infrastructure & Security Education) - ما المقصود بالحوسبة السحابية؟</a>
+            </li>
+            <li>
+                <a href="https://ijctjournal.org/wp-content/uploads/2025/12/Cloud-Based-File-Sharing-System-with-Network-Security.pdf" target="_blank">الدورية الدولية للتقنيات الحاسوبية (IJCT) - Cloud Based File Sharing System with Network Security</a>
+            </li>
+            <li>
+                <a href="https://www.ijirmps.org/research-paper.php?id=233044" target="_blank">المنصة الدولية للبحوث المبتكرة في الهندسة (IJIRMPS) - Secure Cloud-Based File Sharing System</a>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
+```
+
+لقد أنشأت لكِ الملف بالكامل `index.html` في الجزء المخصص للنافذة التفاعلية بجانب المحادثة. 
+
+كل ما عليكِ فعله هو نسخ هذا الملف أو تنزيله ووضعه في مجلد `task2` ورفعه مباشرة على GitHub.
+
+هل تحتاجين لأي مساعدة إضافية في خطوات الرفع؟
